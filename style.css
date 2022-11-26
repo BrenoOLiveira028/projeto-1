@@ -1,0 +1,266 @@
+@charset "UTF-8"
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw ;
+    margin: 3px;
+    background-color: #222327;;
+}
+
+
+header{
+    flex: 1 1 100vw ;
+    height: 100px;
+    
+}
+
+:root
+{
+    --clr: #222327;
+}
+.nav
+{
+    margin-left: 20px;
+width: auto;
+height: 80px;
+position: relative;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+}
+.nav ul
+{
+    display: flex;
+    width: 400px;
+}
+.nav ul li
+{
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 70px;
+    z-index: 1;
+}
+.nav ul li a
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.nav ul li a .icon
+{
+    position: relative;
+    display: block;
+    line-height:70px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+}
+.nav ul li.active a .icon
+{
+    transform: translateY(-32px);
+}
+.nav ul li a .text
+{
+    position: absolute;
+    color: var(--clr);
+    font-weight: 700;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.nav ul li.active a .text
+{
+    opacity: 1;
+    transform: translateY(20px);
+}
+.indicator
+{
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: rgb(199, 156, 15);
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+}
+.indicator::before
+{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px ;
+    box-shadow: 1px -10px 0 0 var(--clr);
+}
+.indicator::after
+{
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px ;
+    box-shadow: -1px -10px 0 0 var(--clr);
+}
+.nav ul li:nth-child(1).active ~ .indicator
+{
+    transform: translateX(calc(80px * 0));
+
+}
+.nav ul li:nth-child(2).active ~ .indicator
+{
+    transform: translateX(calc(80px * 1));
+}
+.nav ul li:nth-child(3).active ~ .indicator
+{
+    transform: translateX(calc(80px * 2));
+}
+.nav ul li:nth-child(4).active ~  .indicator
+{
+    transform: translateX(calc(80px * 3));
+}
+.nav ul li:nth-child(5).active ~.indicator
+{
+    transform: translateX(calc(80px * 4));
+
+}
+
+main{
+    display: flex;
+    margin: 3px;
+    flex: 20 1 500vw ;
+    height: calc(100vh - 330px);
+  
+}
+
+.content{
+    height: 350px;
+    width: 530px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background-color: #fff;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide{
+    width: 25%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+
+}
+#slide2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -75%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (max-width : 923px) {
+    main{
+        height: calc(100vh - 436px);
+    }
+
+}
+
+#cabecalho{     
+    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+font-family: 'Bowlby One SC', cursive;
+font-size: 30px;
+font-style: inherit;
+color: white;
+text-align: center;
+
+padding: 10px;
+margin: 7px;
+border-radius: 2px;
+background-color: rgb(199, 156, 15);
+border-radius: 2px;
+ box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.623);
+background-color: rgb(199, 156, 15);
+
+}
+
+
+
+   
+    
+
+
+

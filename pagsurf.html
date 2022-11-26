@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bola.ico.ico" type="image/x-icon">
+    <title>Bola da vez</title>
+
+    <style>
+           *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw ;
+    margin: 3px;
+}
+
+header{
+    flex: 1 1 100vw ;
+    height: 100px;
+    
+}
+
+nav{
+    flex: 0 0 50vw ;
+    height: 41px;
+    margin: 0%;
+    margin-bottom: 0%;
+    font-size: 12pt;
+    background-color: rgb(59, 59, 59);
+    padding: 10px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.623);
+    border-radius: 70px; 
+}
+nav a{
+    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+font-family: 'Bowlby One SC', cursive;
+margin: 0.5%;
+background-color: rgb(73, 71, 71);
+padding: 3px;
+box-shadow: 0.5px 0.5px 2px rgb(255, 241, 241);
+border-radius: 5px;
+color: #fff;
+}
+
+main{
+    flex: 20 1 500vw;
+    height: auto;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#cabecalho{     
+    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+font-family: 'Bowlby One SC', cursive;
+font-size: 30px;
+font-style: inherit;
+color: white;
+text-align: center;
+
+padding: 10px;
+margin: 7px;
+border-radius: 2px;
+ box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.623);
+background-color: rgb(199, 156, 15);
+
+}
+
+#noticias{
+    color: #fff;
+    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+font-family: 'Bowlby One SC', cursive;
+font-size: 80%;
+text-align: center;
+}
+
+article{
+   
+   background-color:   rgb(73, 71, 71);
+   padding: 5px;
+   margin-top: 2%;
+   border-radius: 2px;
+   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.623);
+}
+
+#reportagem img{
+    display: table-cell;
+    height: 270px;
+    width: 350px;
+   float: left;
+    margin-top: 30px;
+    left: 14%
+    transform: translate(-50%, -50%);
+    border: 7px solid  rgb(73, 71, 71);;
+    box-shadow: 1px 2px 4px black;
+    
+}
+
+#reportagem2 img{
+    display: table-cell;
+    height: 250px;
+    width: 355px;
+   float: left;
+    margin-top: 10px;
+    left: 14%
+    transform: translate(-50%, -50%);
+    border: 7px solid  rgb(73, 71, 71);;
+    box-shadow: 1px 2px 4px black;
+
+}
+
+.texto{
+    display: table-cell;
+    float: left;
+    width: 955px;
+    margin-top: 12px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+ .texto2{
+    display: table-cell;
+    float: left;
+    width: 955px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    hr{
+    clear: both;
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 2px;
+    width: 70%;
+    background: black;
+    margin-bottom: 50px;
+}
+
+@midia only screen and (max-width : 923px) {
+    main{
+        height: calc(100vh - 436px)
+     }
+}
+
+.rodape{
+    margin-top: 50px;
+    height: 100px;
+    width: 100%
+     
+}
+
+.rodape footer{
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    flex: 0 0 50vw ;
+    height: 41px;
+    margin: 0%;
+    margin-bottom: 0px;
+    font-size: 12pt;
+    background-color: rgb(59, 59, 59);
+    padding: 10px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.623);
+    border-radius: 2px; 
+}
+    </style>
+
+
+
+</head>
+<body>
+    <header>
+        <h1 id="cabecalho">&#9917BOLA DA VEZ&#9917</h1>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="pagfut.html">FUTEBOL</a>
+        <a href="pagnba.html">NBA</a>
+        <a href="pagmma.html">MMA</a>
+        <a href="pagsurf.html">SURF</a>
+    </nav>
+    
+    <main>
+        <div>
+       
+        <section id="noticias">
+            <article>
+                <h2>Últimas notícias!</h2>
+            </article>
+        </section>    
+    
+        <section id="reportagem">
+        
+            <img src="gabriel-medina.webp" alt="">
+            
+            
+        </section>
+    </div>
+
+    <div class="texto">
+        <h1>WSL: Gabriel Medina é campeão do Challenger em Saquarema</h1> <br>
+
+        <p>O tricampeão mundial brasileiro virou o jogo nos últimos minutos para conquistar o título do evento classificatório da WSL nesta segunda-feira. Gabriel Medina venceu o marroquino Ramzi Boukhiam com um somatório de 13.67 (7.17 e 6.50), contra os 13.43 (7 e 6.43) do rival, e foi campeão da etapa de Saquarema. Esta foi a primeira vitória do Medina na Praia de Itaúna e a primeira vitória do Brasil em um evento do Challenger Series nesta temporada. A americana Alyssa Spencer venceu Tessa Thyssen e foi a campeã entre as mulheres.</p> <br>
+
+        <h1>A bateria</h1> <br>
+
+        <p>Gabriel Medina começou a bateria com uma boa onda para a esquerda, completou um aéreo e fez 5 pontos. Mas o marroquino não veio para brincadeira, afinal a vitória daria uma vaga automática entre os melhores do mundo. Ramzi Boukhiam conectou boas manobras de backside e anotou uma nota 7. E não parou por aí. Ele fez um 6.43 logo em seguida em outra direita.</p> <br>
+
+        <p>O brasileiro deu o troco faltando 7 minutos. Por causa de um erro de prioridade do marroquino, Medina pegou uma direita e conectou fortes manobras na parede, fazendo a maior nota da bateria (7.17). Para fechar com chave de ouro, Gabriel tirou um 6.50 e se consagrou o grande campeão da etapa.</p> <br>
+
+    </div>
+    <hr>
+
+    <div id="reportagem2">
+        <img src="festival surf autista.webp" alt="">
+
+    </div>
+
+    <div class="texto2">
+        <h1>Festival de Surf para Autistas movimenta Balneário Camboriú</h1> <br>
+
+        <p>O Festival de Surf para Autistas vai movimentar as águas da Praia Central de Balneário Camboriú, no Litoral Norte de Santa Catarina, no próximo sábado, 5 de novembro. De acordo com o instrutor Túlio Ferri, a expectativa é receber mais de 200 atletas. <br>
+
+            A novidade em 2022 é que a 6ª edição do evento será a abertura do 1º Circuito Santacosta de Surf Inclusão, com a presença de juízes profissionais, premiações nas quatro etapas e também para os campeões das categorias síndrome de down e autista.</p> <br>
+
+            <p>– O festival por si só se configura um desafio para autistas. Contudo, percebemos que muitos superaram o desafio de ficar em pé na prancha e precisam de algo mais. Por isso, decidimos criar um campeonato com quatro etapas em Santa Catarina – contou Túlio Ferri.</p> <br>
+
+            <p>Depois de Balneário Camboriú, as provas serão realizadas em Itajaí, Itapema e Florianópolis, respectivamente.</p> <br>
+
+        <p>A primeira edição do festival ocorreu em 2015 e recebeu 42 crianças. Elas foram atendidas por Túlio e mais 91 voluntários. A prova em Balneário Camboriú seguiu o formato dos grandes campeonatos da modalidade esportiva, com cinco atletas em cada bateria.</p>
+        
+     </div>
+
+    </main>
+
+    <div class="rodape">
+        <footer>Desenvolvido por Breno</footer>
+    </div>
+</body>
+</html>

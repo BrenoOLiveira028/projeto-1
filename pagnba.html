@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="bola.ico.ico" type="image/x-icon">
+    <title>Bola da vez</title>
+    <style>
+         *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw ;
+    margin: 3px;
+}
+
+
+
+
+header{
+    flex: 1 1 100vw ;
+    height: 100px;
+    
+}
+
+nav{
+    flex: 0 0 50vw ;
+    height: 41px;
+    margin: 0%;
+    margin-bottom: 0%;
+    font-size: 12pt;
+    background-color: rgb(59, 59, 59);
+    padding: 10px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.623);
+    border-radius: 70px; 
+}
+nav a{
+    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+font-family: 'Bowlby One SC', cursive;
+margin: 0.5%;
+background-color: rgb(73, 71, 71);
+padding: 3px;
+box-shadow: 0.5px 0.5px 2px rgb(255, 241, 241);
+border-radius: 5px;
+color: #fff;
+}
+
+main{
+    flex: 20 1 500vw;
+    height:auto
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#cabecalho{     
+    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+font-family: 'Bowlby One SC', cursive;
+font-size: 30px;
+font-style: inherit;
+color: white;
+text-align: center;
+
+padding: 10px;
+margin: 7px;
+border-radius: 2px;
+ box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.623);
+background-color: rgb(199, 156, 15);
+
+}
+
+@midia only screen and (max-width : 923px) {
+    main{
+        height: calc(100vh - 436px)
+     }
+}
+
+#noticias{
+    color: #fff;
+    @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+font-family: 'Bowlby One SC', cursive;
+font-size: 80%;
+text-align: center;
+}
+
+article{
+   
+   background-color:   rgb(73, 71, 71);
+   padding: 5px;
+   margin-top: 2%;
+   border-radius: 2px;
+   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.623);
+}
+
+#reportagem img{
+    display: table-cell;
+    height: 270px;
+    width: 350px;
+   float: left;
+    margin-top: 30px;
+    left: 14%
+    transform: translate(-50%, -50%);
+    border: 7px solid  rgb(73, 71, 71);;
+    box-shadow: 1px 2px 4px black;
+    
+}
+
+#reportagem2 img{
+    display: table-cell;
+    height: 250px;
+    width: 355px;
+   float: left;
+    margin-top: 10px;
+    left: 14%
+    transform: translate(-50%, -50%);
+    border: 7px solid  rgb(73, 71, 71);;
+    box-shadow: 1px 2px 4px black;
+
+}
+
+
+.texto{
+    display: table-cell;
+    float: left;
+    width: 955px;
+    margin-top: 12px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .texto2{
+    display: table-cell;
+    float: left;
+    width: 955px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    hr{
+    clear: both;
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 2px;
+    width: 70%;
+    background: black;
+    margin-bottom: 50px;
+}
+
+.rodape{
+    margin-top: 50px;
+    height: 100px;
+    width: 100%
+     
+}
+
+.rodape footer{
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    flex: 0 0 50vw ;
+    height: 41px;
+    margin: 0%;
+    margin-bottom: 0px;
+    font-size: 12pt;
+    background-color: rgb(59, 59, 59);
+    padding: 10px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.623);
+    border-radius: 2px; 
+}
+
+   
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="cabecalho">&#9917BOLA DA VEZ&#9917</h1>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="pagfut.html">FUTEBOL</a>
+        <a href="pagnba.html">NBA</a>
+        <a href="pagmma.html">MMA</a>
+        <a href="pagsurf.html">SURF</a>
+    </nav>
+
+    <main>
+        <div>
+       
+        <section id="noticias">
+            <article>
+                <h2>Últimas notícias!</h2>
+            </article>
+        </section>    
+    
+        <section id="reportagem">
+        
+            <img src="curry nba.jpg" alt="nba-curry">
+            
+            
+        </section>
+        
+
+        <div class="texto">
+            <h1>Com grande atuação de Stephen Curry, Golden State Warriors derrota Cleveland Cavaliers na NBA</h1> <br>
+            
+            <p>Com 40 pontos na conta, Stephen Curry foi o destaque da vitória do atual campeão Golden State Warriors sobre o Cleveland Cavaliers por 106 a 101 na noite dessa sexta-feira (11), pela NBA. O triunfo foi consolidado nos momentos finais do confronto. Além de ser decisivo na construção do placar, o armador ainda deu sua contribuição com cinco assistências, quatro rebotes e ainda um desarme.</p> <br>
+
+            <p>A bela atuação do cestinha da partida coincide com o bom momento da equipe, que após uma fase ruim, onde sofreu cinco derrotas seguidas, emplaca agora a segunda vitória na competição e sobe para o 11º posto na Conferência Oeste. </p> <br> <p>Já o Cleveland Cavaliers não atravessa um bom momento. Depois de oito vitórias no torneio, o time do brasileiro Raulzinho já amarga a terceira derrota seguida e ocupa o quarto lugar na Conferência Leste. </p> <br>
+
+               <p> Em um jogo marcado pelo equilíbrio, Curry levantou a torcida ao empatar o duelo com uma cesta de três a 1 min18seg do fim. Em seguida, fez uma bandeja após assistência de Kevon Looney e acertou mais um lance de três para chegar aos 40 pontos no jogo.</p> <br>
+                
+            <p> Pelo lado do Cavaliers, o protagonismo ficou por conta de Donovan Mitchell, que fez 29 pontos, pegou 10 rebotes e serviu os companheiros com nove assistências. No entanto, a sua performance não foi suficiente para garantir a vitória na casa do adversário.</p> 
+            
+        </div>
+        <hr>
+        
+        <div id="reportagem2">
+            <img src="miles-bridges.webp" alt="miles-bridges">
+            
+
+        </div>
+
+        <div class="texto2">
+            <h1>Lakers e Pistons monitoram Miles Bridges como possível reforço</h1> <br>
+
+            <p>Casos de violência são vistos, antes de tudo, com muita seriedade pela NBA. Mas, com o começo da temporada, as necessidades competitivas se sobrepõem a questões morais para várias franquias. De acordo com Shams Charania, do site The Athletic, o Los Angeles Lakers e Detroit Pistons monitoram a situação de Miles Bridges e consideram a sua contratação.</p> <br>
+
+            <p>O ala de 24 anos não está em quadra por causa de um caso de agressão contra a parceira. Ele foi acusado de agredir a mãe dos seus dois filhos e, além disso, ser uma ameaça às crianças. Não contestou as acusações e, com isso, aceitou uma condenação de três anos de liberdade condicional.</p> <br>
+
+            <p>O interesse da franquia de Los Angeles não chega a ser uma surpresa nos bastidores. Em primeiro lugar, os angelinos estão em busca de reforços após o seu péssimo início de campanha. E, além disso, o jovem ala e LeBron James compartilham o mesmo empresário: Rich Paul. Essa “ponte” ajudaria a avançar uma possível negociação.</p>
+            
+            
+        </div>
+    </main>
+
+
+        <div class="rodape">
+            <footer>Desenvolvido por Breno</footer>
+        </div>
+
+   
+
+    
+</body>
+</html>
